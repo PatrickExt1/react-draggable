@@ -148,7 +148,7 @@ export function styleHacks(childStyle: Object = {}): Object {
   // Workaround IE pointer events; see #51
   // https://github.com/mzabriskie/react-draggable/issues/51#issuecomment-103488278
   return {
-    touchAction: 'none',
+    touchAction: 'pan-y',
     ...childStyle
   };
 }

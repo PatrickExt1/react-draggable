@@ -52,7 +52,7 @@ describe('react-draggable', function () {
 
       const node = renderToNode(drag);
       if ('touchAction' in document.body.style) {
-        assert(node.getAttribute('style').indexOf('touch-action: none') >= 0);
+        assert(node.getAttribute('style').indexOf('touch-action: pan-y') >= 0);
       }
       assert(node.getAttribute('style').indexOf('color: black') >= 0);
       assert(node.getAttribute('style').indexOf(transformStyle + ': translate(0px, 0px)') >= 0);
